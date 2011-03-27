@@ -1,0 +1,23 @@
+This is a collection of scripts to help create m4b files.
+
+The m4b extension is an Apple convention to indicate a standard m4a
+audio file that contains an audio book. The m4a extension is another
+Apple convention to indicate a standard MPEG-4 file containing AAC
+encoded audio. The m4b files can also contain internal chapter marks
+to allow internal navigation.
+
+When loaded on to an Apple iPod, the m4b allows you to resume playback
+from the last position, and allows you to skip between the chapter
+marks within the file.
+
+These scripts require at least version 1.6 of the mpeg4ip tools.
+
+m4a2chaps.py
+------------
+
+This script reads the durations and titles of the m4a files on the
+command line, and creates a text description of the chapter
+information that is suitable to be used with 'mp4chaps -i'.
+
+If you concatenate the input files into a single audio file, then this
+would be the accompanying chapter information.
